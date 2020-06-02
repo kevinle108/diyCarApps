@@ -12,7 +12,8 @@ h1, p {
     background: black;
 }
 
-.test-button {
+.mpgApp {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
