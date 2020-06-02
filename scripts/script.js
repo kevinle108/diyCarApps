@@ -16,3 +16,17 @@ function testfunction() {
     gas.textContent = user_gas + " gallons";
     mpg.textContent = mpgCalculated + " miles/gallon";
 }
+
+// js code for form //
+let formRange = document.querySelector('#form-mpg-range.value');
+let formGas = document.querySelector('#form-mpg-gas.value');
+let formResult = document.querySelector('#form-mpg-result');
+
+document.querySelector('#form-submit').onclick = submitFormMPG;
+
+function submitFormMPG() {
+    formResult.value = formRange / formGas;
+}
+
+
+
