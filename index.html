@@ -26,21 +26,22 @@
     </div>
 
     <div>
-        <h2 class="form-title">Form for mpg calc</h2>
+        <h2 class="form-title">Form for MPG Calculator</h2>
         <form class="mpgform">
             <div class="form-fields">
                 <label for="form-mpg-range">Distance (in miles):</label><br>
-                <label for="form-mpg-gas">Gas consumed (in miles):</label><br>
+                <label for="form-mpg-gas">Gas consumed (in gallons):</label><br>
                 <label for="form-mpg-result">Calculated MPG:</label><br>                
             </div>
             
             <div class="form-inputs">
                 <input id="form-mpg-range" name="form-range"><br>
                 <input id="form-mpg-gas" name="form-gas"><br>
-                <input id="form-mpg-result" name="form-result"><br>
+                <input id="form-mpg-result" name="form-result" readonly="true"><br>
             </div>
 
-            <button id="form-submit">Submit</button>
+            <button type="button"id="form-submit">Submit</button>
+            <button type="reset">Clear</button>
             
         </form>
     </div>

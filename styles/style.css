@@ -19,7 +19,7 @@ h1, p {
 }
 
 .form-title {
-    padding-left: 70px;
+    padding-left: 100px;
 }
 
 .mpgform {
@@ -35,6 +35,16 @@ h1, p {
 }
 
 .mpgform button {
+    color: white;
     background-color: green;
     height: auto;
+}
+
+button[type="reset"] {
+    color: black;
+    background: grey;
+}
+
+#form-mpg-result {
+    background: rgb(180, 174, 174);
 }

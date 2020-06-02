@@ -18,15 +18,34 @@ function testfunction() {
 }
 
 // js code for form //
-let formRange = document.querySelector('#form-mpg-range.value');
-let formGas = document.querySelector('#form-mpg-gas.value');
-let formResult = document.querySelector('#form-mpg-result');
+
 
 document.querySelector('#form-submit').onclick = submitFormMPG;
 
 function submitFormMPG() {
-    formResult.value = formRange / formGas;
+    let formRange = document.querySelector('#form-mpg-range').value;
+    let formGas = document.querySelector('#form-mpg-gas').value;
+    if (Number(formRange) && Number(formGas)) {
+        formRange = +formRange;
+        formGas = +formGas;
+        let answer = Math.round(formRange / formGas);
+        console.log(`Range was ${formRange} miles`);
+        console.log(`Gas was ${formGas} gallons`);
+        console.log(`Answer is ${answer} mpg`);
+        document.querySelector('#form-mpg-result').value = `${answer} miles / gallon`;        
+    } else {
+        alert('Error: Invalid inputs were submitted. Please enter numbers to calculate your mpg.')
+    }
+    
+    
+
+        
 }
+
+
+
+
+
 
 
 
