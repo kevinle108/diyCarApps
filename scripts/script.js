@@ -36,16 +36,7 @@ function submitFormMPG() {
     } else {
         alert('Error: Invalid inputs were submitted. Please enter numbers to calculate your mpg.')
     }
-    
-    
-
-        
 }
-
-
-
-
-
 
 
 
