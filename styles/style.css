@@ -48,3 +48,7 @@ button[type="reset"] {
 #form-mpg-result {
     background: rgb(180, 174, 174);
 }
+
+.mpgform-wrap {
+    display: block;
+}

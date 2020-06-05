@@ -38,5 +38,27 @@ function submitFormMPG() {
     }
 }
 
+//code for show / hide form 
 
+// document.querySelector('#btnOpen-mpgform').onclick = showHide;
+
+// function showHide() {
+//     // let form = document.querySelector('.mpgform-wrap');
+//     // if (form.style.display === 'none') {
+//     //     form.style.display === 'block';
+//     // } else {
+//     //     form.style.display === 'none';
+//     // }
+//     document.querySelector('.formtitle').textContent = 'CLICKED!';
+// }
+
+document.querySelector('#btnShowForm').onclick = showHideForm;
+function showHideForm() {
+    let x = document.getElementById('myDIV');
+    if (x.style.display === 'none') {
+      x.style.display = 'block';
+    } else {
+      x.style.display = 'none';
+    }
+  }
 
