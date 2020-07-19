@@ -54,10 +54,17 @@ function submitFormMPG() {
 
 document.querySelector('#btnShowForm').onclick = showHideForm;
 function showHideForm() {
-    let x = document.getElementById('myDIV');
-    if (x.style.display === 'none') {
-      x.style.display = 'block';
-    } else {
-      x.style.display = 'none';
-    }
+  let x = document.getElementById('myDIV');
+  if (x.style.display === 'none') {
+    x.style.display = 'block';
+  } else {
+    x.style.display = 'none';
   }
+}
+
+let showHideMenuBtn = document.getElementById('showButtonNavBar');
+showHideMenuBtn.addEventListener('click', showHandler);
+function showHandler(event) {
+  event.preventDefault();
+  showHideForm();
+}

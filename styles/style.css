@@ -70,12 +70,6 @@ h1, p {
     color: white;
 }
 
-.header {
-    display: flex;
-    justify-content: space-between;
-    background: black;
-}
-
 .mpgApp {
     display: flex;
     flex-direction: column;
