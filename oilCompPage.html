@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="wclassth=device-wclassth, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css">
+    
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutPage.html">About</a></li>
+            <li><a href="">Apps</a>
+                <ul>
+                    <li><a id="oilMenuItem" href="oilCompPage.html">Compare Motor Oil</a></li>
+                    <li><a id="mpgMenuItem" href="mpgCalcPage.html">Calculate MPG</a></li>
+                </ul>
+            </li>
+            <li><a href="contactPage.html">Contact</a></li>
+        </ul>
+    </header>
+
+    <div id="oilCompareContent">
+        <h1>Currently under construction...</h1>
+        <h2>Compare Motor Oil prices</h2>
+        <form >
+            <div id="oilWrap">
+                <div id="oilA">
+                    <h3>Oil A</h3>
+                    <input type="radio" id="conventional" name="oilType" value="conventional">
+                    <label for="conventional">Conventional</label><br>
+                    <input type="radio" id="synthetic" name="oilType" value="synthetic">
+                    <label for="synthetic">Synthetic</label><br><br>
+                    <label for="form-mpg-gas">Number of Quarts:</label><br><input id="form-mpg-gas" name="form-gas"><br><br>
+                    <label for="form-mpg-range">Price ($):</label><br><input id="form-mpg-range" name="form-range"><br>
+                </div>
+    
+                <div id="oilB">
+                    <h3>Oil B</h3>
+                    <input type="radio" id="conventional" name="oilType" value="conventional">
+                    <label for="conventional">Conventional</label><br>
+                    <input type="radio" id="synthetic" name="oilType" value="synthetic">
+                    <label for="synthetic">Synthetic</label><br><br>
+                    <label for="form-mpg-gas">Number of Quarts:</label><br><input id="form-mpg-gas" name="form-gas"><br><br>
+                    <label for="form-mpg-range">Price ($):</label><br><input id="form-mpg-range" name="form-range"><br>
+                </div>
+            </div>
+            
+            <div class="flexCenter">
+                <label for="form-mpg-gas">Oil Tank Capacity:</label><br><input id="form-mpg-gas" name="form-gas"><br>
+                <div id="oilCompBtnsWrap">
+                    <button type="button"id="form-submit">Submit</button>
+                    <button type="reset">Clear</button>
+                </div>
+                
+            </div>
+            
+        </form>
+    </div>
+
+</body>
+<script defer src="scripts/script.js"></script>
+</html>
