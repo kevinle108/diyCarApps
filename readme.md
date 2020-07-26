@@ -1,10 +1,16 @@
 # Code Louisville Front-End Project
 
+## Description
+-This project showcases an understanding of HTML, CSS, and JS to generate a website that performs simple calculations (such as mpg).
+
+## How to Use
+- Using the navigation bar, select 'Calculate MPG' located inside the 'Apps' menu item
+- Fill in the form with positive numbers and click the 'Submit' button to view the calculated miles/gallon (mpg)
+
 ## Main features
-This project showcases an understanding of HTML, CSS, and JS to generate a website that performs simple calculations (such as mpg).
-Utilization of: 
-- HTML forms, buttons, anchor links
 - Navigation menu that has drop-down submenu (in Apps)
+- HTML forms with JS functionality
+- CSS flexbox styling for responsive design
 
 ## Feature Requirements met
 - Create a form that takes in at least two fields of information and validates input (for example, it checks to ensure email is the a@b.com format
