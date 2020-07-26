@@ -10,6 +10,7 @@ body {
     /* font-family: 'Poppins', sans-serif; */
 }
 
+/* start styling for nav bar */
 header {
     width: 100%;
     background: #000;
@@ -68,6 +69,8 @@ header ul li:hover {
 header ul li:last-child {
     border-right: none;
 }
+
+/* end styling for nav bar */
 
 h1, p {
     color: white;

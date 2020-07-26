@@ -1,11 +1,14 @@
+// targets and adds functionality to the submit button in the mpg form
 document.querySelector('#form-submit').onclick = submitFormMPG;
+
+// calculates mpg and displays the result in the mpg form
 function submitFormMPG() {
   let formRange = document.querySelector('#form-mpg-range').value;
   let formGas = document.querySelector('#form-mpg-gas').value;
   if (Number(formRange) && Number(formGas)) {
       distance = +formRange;
       gas = +formGas;
-      let answer = calculateMPG(distance, gas);
+      let answer = Math.round(distance / gas);
       console.log(`Range was ${formRange} miles`);
       console.log(`Gas was ${formGas} gallons`);
       console.log(`Answer is ${answer} mpg`);
@@ -13,8 +16,4 @@ function submitFormMPG() {
   } else {
       alert('Error: Invalid inputs were submitted. Please enter numbers to calculate your mpg.')
   }
-}
-
-function calculateMPG(miles, gallons) {
-  return Math.round(miles / gallons);
 }
