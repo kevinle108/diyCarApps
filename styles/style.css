@@ -99,7 +99,7 @@ button[type="reset"] {
 
 #oilWrap {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
 }
 
@@ -121,22 +121,8 @@ button[type="reset"] {
     align-items: center;
 }
 
-@media (max-width: 768px) {
-    header ul {
-        display: block;
-    }
-
-    header ul li {
-        display: block;
-    }
-
-    header ul li ul{
-        width: 100%;
-        z-index: 1;
-    }
-}
-
 @media (min-width: 769px) {
+    /* start media queries for nav bar */
     .topnav {
         background: #000;
     }
@@ -164,5 +150,12 @@ button[type="reset"] {
     .topnav #myLinks a:last-child {
         border-right: none;
     }
+    /* end media queries for nav bar */
+
+    /* start media queries for content */
+    #oilWrap {
+        flex-direction: row;
+    }
+    /* end media queries for nav bar */
 
 }
