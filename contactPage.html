@@ -4,20 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles/style.css">
     
 </head>
 <body>
-    <!-- navigation bar -->
-    <header>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="aboutPage.html">About</a></li>
-            <li><a id="oilMenuItem" href="oilCompPage.html">Compare Motor Oil</a></li>
-            <li><a id="mpgMenuItem" href="mpgCalcPage.html">Calculate MPG</a></li>
-            <li><a href="contactPage.html">Contact</a></li>
-        </ul>
-    </header>
+    <!-- Simulate a smartphone / tablet -->
+    <div class="mobile-container">
+        <!-- Top Navigation Menu -->
+        <div class="topnav">
+            <a href="contactPage.html" class="active">Contact</a>
+            <div id="myLinks">
+                <a href="index.html">Home</a>
+                <a href="oilCompPage.html">Compare Motor Oil</a>
+                <a href="mpgCalcPage.html">Calculate MPG</a>
+                <a href="contactPage.html" class="active">Contact</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    <!-- End smartphone / tablet look -->
+    </div>
 
     <div id="contactContent">
         <h2>Contact Kevin:</h2>

@@ -1,3 +1,45 @@
+/* Style the navigation menu */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+  }
+  
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  /* Style navigation menu links */
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  /* Add a grey background color on mouse-over */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Style the active link (or home/logo) */
+  .active {
+    background-color: #4CAF50;
+    color: white;
+  }
+
 
 body {
     /* background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%); */
@@ -9,68 +51,6 @@ body {
     height: 100vh;
     /* font-family: 'Poppins', sans-serif; */
 }
-
-/* start styling for nav bar */
-header {
-    width: 100%;
-    background: #000;
-}
-
-header ul {
-    display: flex;
-    justify-content: flex-end;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0;
-}
-
-header ul li {
-    list-style: none;
-    position: relative;
-    padding: 10px 0;
-    transition: 0.5s;
-    box-sizing: border-box; 
-    border-right: 1px solid rgba(255, 255, 255, .2);
-
-}
-
-header ul li a {
-    text-decoration: none;
-    padding: 0 20px;
-    color: #fff;
-}
-
-header ul li ul {
-    position: absolute;
-    top: 45px;
-    left: 0;
-    background: #000;
-    display: block;
-    width: 200px;
-    transition: 0.5s;
-    opacity: 0;
-    visibility: hidden;
-}
-
-header ul li:hover ul {
-    opacity: 1;
-    visibility: visible;
-}
-
-header ul li ul li {
-    border-bottom: 1px solid rgba(255, 255, 255, .2);;
-    border-right: none;
-}
-
-header ul li:hover {
-    background: #2196f3;
-}
-
-header ul li:last-child {
-    border-right: none;
-}
-
-/* end styling for nav bar */
 
 h1, p {
     color: white;
@@ -119,7 +99,7 @@ button[type="reset"] {
 
 #oilWrap {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
 }
 
@@ -141,19 +121,41 @@ button[type="reset"] {
     align-items: center;
 }
 
-
-
-@media (max-width: 768px) {
-    header ul {
-        display: block;
+@media (min-width: 769px) {
+    /* start media queries for nav bar */
+    .topnav {
+        background: #000;
     }
 
-    header ul li {
-        display: block;
+    .topnav > a:first-child {
+        display: none;
+    } 
+
+    .topnav > a:last-child {
+        display: none;
     }
 
-    header ul li ul{
-        width: 100%;
-        z-index: 1;
+    .topnav #myLinks {
+        display: flex;
+        justify-content: flex-end;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0;
     }
+
+    .topnav #myLinks a {
+        border-right: 1px solid rgba(255, 255, 255, .2);
+    }
+
+    .topnav #myLinks a:last-child {
+        border-right: none;
+    }
+    /* end media queries for nav bar */
+
+    /* start media queries for content */
+    #oilWrap {
+        flex-direction: row;
+    }
+    /* end media queries for nav bar */
+
 }
