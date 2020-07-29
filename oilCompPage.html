@@ -42,17 +42,17 @@
     
                 <div id="oilB">
                     <h3>Oil B</h3>
-                    <input type="radio" id="conventionalA" name="oilTypeA" value="conventional"><label for="conventionalA">Conventional (oil change every 3,000 miles)</label><br>
-                    <input type="radio" id="syntheticA" name="oilTypeA" value="synthetic"><label for="syntheticA">Synthetic (oil change every 5,000 miles)</label><br><br>
+                    <input type="radio" id="conventionalB" name="oilTypeB" value="conventional"><label for="conventionalB">Conventional (oil change every 3,000 miles)</label><br>
+                    <input type="radio" id="syntheticB" name="oilTypeB" value="synthetic"><label for="syntheticB">Synthetic (oil change every 5,000 miles)</label><br><br>
                     <label for="quartAmtB">Number of Quarts:</label><br><input id="quartAmtB" name="quartAmtB"><br><br>
                     <label for="priceB">Price ($):</label><br><input id="priceB" name="priceB"><br>
                 </div>
             </div>
             
             <div class="flexCenter">
-                <label for="oilTankCapacity">Oil Tank Capacity:</label><br><input id="oilTankCapacity" name="oilTankCapacity"><br>
+                <label for="oilTankCapacity">Oil Tank Capacity (liters):</label><br><input id="oilTankCapacity" name="oilTankCapacity"><br>
                 <div id="oilCompBtnsWrap">
-                    <button type="button">Submit</button>
+                    <button type="button" id="oilCompSubmitButton">Submit</button>
                     <button type="reset">Clear</button>
                 </div>
                 
@@ -62,5 +62,6 @@
     </div>
 
 </body>
-<script defer src="scripts/script.js"></script>
+<script src="scripts/script.js"></script>
+<script src="scripts/oil.js"></script>
 </html>
