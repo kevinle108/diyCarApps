@@ -189,6 +189,10 @@ button[type="reset"] {
         background: #000;
     }
 
+    /* .topnav > a:first-child {
+        display: none;
+    }  */
+
     .topnav > a:last-child {
         display: none;
     }
