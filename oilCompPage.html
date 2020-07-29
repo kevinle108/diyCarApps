@@ -4,20 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Compare Motor Oil</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles/style.css">
     
 </head>
 <body>
-    <!-- navigation bar -->
-    <header>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="aboutPage.html">About</a></li>
-            <li><a id="oilMenuItem" href="oilCompPage.html">Compare Motor Oil</a></li>
-            <li><a id="mpgMenuItem" href="mpgCalcPage.html">Calculate MPG</a></li>
-            <li><a href="contactPage.html">Contact</a></li>
-        </ul>
-    </header>
+    <!-- Simulate a smartphone / tablet -->
+    <div class="mobile-container">
+        <!-- Top Navigation Menu -->
+        <div class="topnav">
+            <a href="oilCompPage.html" class="active">Compare Motor Oil</a>
+            <div id="myLinks">
+                <a href="index.html">Home</a>
+                <a href="oilCompPage.html" class="active">Compare Motor Oil</a>
+                <a href="mpgCalcPage.html">Calculate MPG</a>
+                <a href="contactPage.html">Contact</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    <!-- End smartphone / tablet look -->
+    </div>
 
     <div id="oilCompareContent">
         <h1>...Currently under construction...</h1>
@@ -25,7 +33,7 @@
         <form >
             <div id="oilWrap">
                 <div id="oilA">
-                    <h3>Oil B</h3>
+                    <h3>Oil A</h3>
                     <input type="radio" id="conventionalA" name="oilTypeA" value="conventional"><label for="conventionalA">Conventional (oil change every 3,000 miles)</label><br>
                     <input type="radio" id="syntheticA" name="oilTypeA" value="synthetic"><label for="syntheticA">Synthetic (oil change every 5,000 miles)</label><br><br>
                     <label for="quartAmtA">Number of Quarts:</label><br><input id="quartAmtA" name="quartAmtA"><br><br>
