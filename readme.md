@@ -8,11 +8,12 @@
 - Fill in the form with positive numbers and click the 'Submit' button to view the calculated miles/gallon (mpg)
 
 ## Main features
-- Navigation menu that has drop-down submenu (in Apps tab)
+- Responsive navigation menu
 - HTML forms with JS functionality
 - CSS flexbox styling for responsive design
 
 ## Feature Requirements met
+- A navigation menu that collapses into a responsive mobile-friendly menu 
 - Create a form that takes in at least two fields of information and validates input
     - ensures that only positive numbers can be entered into the form
 - Use JavaScript to perform math operations and display the result on your site.
