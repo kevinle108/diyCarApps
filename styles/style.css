@@ -52,52 +52,6 @@ body {
     /* font-family: 'Poppins', sans-serif; */
 }
 
-/* start styling for nav bar */
-header {
-    width: 100%;
-    background: #000;
-}
-
-header ul {
-    display: flex;
-    justify-content: flex-end;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0;
-}
-
-header ul li {
-    list-style: none;
-    position: relative;
-    padding: 10px 0;
-    transition: 0.5s;
-    box-sizing: border-box; 
-    border-right: 1px solid rgba(255, 255, 255, .2);
-}
-
-header ul li a {
-    text-decoration: none;
-    padding: 0 20px;
-    color: #fff;
-}
-
-
-header ul li:hover ul {
-    opacity: 1;
-    visibility: visible;
-}
-
-
-header ul li:hover {
-    background: #2196f3;
-}
-
-header ul li:last-child {
-    border-right: none;
-}
-
-/* end styling for nav bar */
-
 h1, p {
     color: white;
 }
@@ -167,8 +121,6 @@ button[type="reset"] {
     align-items: center;
 }
 
-
-
 @media (max-width: 768px) {
     header ul {
         display: block;
@@ -189,9 +141,9 @@ button[type="reset"] {
         background: #000;
     }
 
-    /* .topnav > a:first-child {
+    .topnav > a:first-child {
         display: none;
-    }  */
+    } 
 
     .topnav > a:last-child {
         display: none;
