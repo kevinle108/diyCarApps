@@ -28,10 +28,24 @@
     </div>
 
     <div id="contactContent">
-        <h2>Contact Kevin:</h2>
-        <h3>...Currently under construction...</h3>
+        <h1>Contact Kevin:</h1>
+            <img src="https://img.icons8.com/dusk/64/000000/email.png"/>
+        <div class="column">
+            <form action="/action_page.php">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" >
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname">
+              <label for="email">Enter your email:</label>
+              <input type="email" id="email" name="email">
+              <label for="subject">Subject</label>
+              <textarea id="subject" name="subject" style="height:170px"></textarea>
+              <input type="button" value="Submit" id="contactSubmitBtn">
+            </form>
+          </div>
     </div>
 
 </body>
-<script defer src="scripts/script.js"></script>
+<script src="scripts/script.js"></script>
+<script src="scripts/contact.js"></script>
 </html>

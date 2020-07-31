@@ -1,5 +1,5 @@
 // targets and adds functionality to the submit button in the mpg form
-document.querySelector('#form-submit').onclick = submitFormMPG;
+document.getElementById('mpgSubmitBtn').onclick = submitFormMPG;
 
 // calculates mpg and displays the result in the mpg form
 function submitFormMPG() {

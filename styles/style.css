@@ -1,3 +1,13 @@
+h1 {
+    text-align: center;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* Style the navigation menu */
 .topnav {
     overflow: hidden;
@@ -62,13 +72,8 @@ h1, p {
     align-items: center;
 }
 
-.form-title {
-    padding-left: 100px;
-}
 
-.mpgform {
-    display: flex;
-}
+
 
 .form-fields, .form-inputs {
     display: flex;
@@ -123,7 +128,7 @@ button[type="reset"] {
     align-items: center;
 }
 
-#oilCompSubmitButton {
+#oilCompSubmitButton, #mpgSubmitBtn {
     padding: 15px 25px;
     margin: 5px;
     font-size: 24px;
@@ -138,7 +143,7 @@ button[type="reset"] {
     box-shadow: 0 9px seagreen;
 }
 
-#oilCompResetButton {
+#oilCompResetButton, #mpgResetBtn {
     padding: 15px 25px;
     font-size: 24px;
     margin: 5px;
@@ -164,6 +169,64 @@ button[type="reset"] {
     display: flex;
     flex-direction: column;
 }
+
+#mpgWrap {
+    margin: 10px;
+    background-color: darkgreen;
+    border-radius: 25px;
+    padding: 16px;
+}
+
+/* start styling for contact form */
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Style inputs */
+  input[type=text], input[type=email], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit], #contactSubmitBtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Style the container/contact section */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+  }
+  
+  /* Create two columns that float next to eachother */
+  .column {
+    margin: auto;
+    width: 50%;
+    padding: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+/* end styling for contact form */
+
+
 
 @media (min-width: 769px) {
     /* start media queries for nav bar */

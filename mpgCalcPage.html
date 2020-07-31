@@ -28,22 +28,25 @@
     </div>
 
     <div id="mpgCalcContent">
-        <h2 class="form-title">MPG Calculator</h2> 
+        <h1>MPG Calculator</h1> 
         <img src="https://img.icons8.com/plasticine/100/000000/eco-fuel.png"/>
         <form class="mpgform">
-            <div class="form-fields">
+            <div id="mpgWrap">
                 <label for="form-mpg-range">Distance (in miles):</label><br>
+                <input id="form-mpg-range" name="form-range"><br><br>
+
                 <label for="form-mpg-gas">Gas consumed (in gallons):</label><br>
+                <input id="form-mpg-gas" name="form-gas"><br><br>
+
+                
                 <label for="form-mpg-result">Calculated MPG:</label><br>                
+                <input id="form-mpg-result" name="form-result" readonly="true"><br><br>
             </div>
+                
+
             
-            <div class="form-inputs">
-                <input id="form-mpg-range" name="form-range"><br>
-                <input id="form-mpg-gas" name="form-gas"><br>
-                <input id="form-mpg-result" name="form-result" readonly="true"><br>
-            </div>
-            <button type="button" id="form-submit">Submit</button>
-            <button type="reset">Clear</button>
+            <button type="button" id="mpgSubmitBtn">Submit</button>
+            <button type="reset" id="mpgResetBtn">Clear</button>
         </form>
     </div>
 </body>
