@@ -18,8 +18,8 @@ function oilSubmitHandler(event) {
   const oilCapacity = parseFloat(document.getElementById('oilTankCapacity').value);
 
   //check for empty values in oil A
-  console.log('oilAquart', typeof(oilAquart), oilAquart);
-  console.log('oilAprice', typeof(oilAprice), oilAprice);
+//   console.log('oilAquart', typeof(oilAquart), oilAquart);
+//   console.log('oilAprice', typeof(oilAprice), oilAprice);
   let selectedAtype = false;
   let validANumbers = false;
   let validA = false;
@@ -32,9 +32,9 @@ function oilSubmitHandler(event) {
   if (selectedAtype && validANumbers) {
     validA = true;
   }
-  console.log('selectedAtype', selectedAtype)
-  console.log('validANumbers', validANumbers)
-  console.log('validA', validA);
+//   console.log('selectedAtype', selectedAtype)
+//   console.log('validANumbers', validANumbers)
+//   console.log('validA', validA);
 
   //check for empty values in oil B
   console.log('oilBquart', typeof(oilBquart), oilBquart);
@@ -52,16 +52,16 @@ function oilSubmitHandler(event) {
     validB = true;
   }
 
-  console.log('selectedBtype', selectedBtype)
-  console.log('validBNumbers', validBNumbers)
-  console.log('validB', validB);
+//   console.log('selectedBtype', selectedBtype)
+//   console.log('validBNumbers', validBNumbers)
+//   console.log('validB', validB);
 
   //check for empty oil tank capacity  
   let validOilCapacity = (!isNaN(oilCapacity) && oilCapacity > 0 ? true : false);
-  console.log('validOilCapacity', validOilCapacity);  
+//   console.log('validOilCapacity', validOilCapacity);  
   
   if (validA && validB && validOilCapacity) {
-    console.log(oilAcon, oilAsyn, oilAquart, oilAprice, oilBcon, oilBsyn, oilBquart, oilBprice, oilCapacity);
+    // console.log(oilAcon, oilAsyn, oilAquart, oilAprice, oilBcon, oilBsyn, oilBquart, oilBprice, oilCapacity);
 
     let oilAmessage = 'Oil A is cheaper';
   
@@ -77,7 +77,7 @@ function oilSubmitHandler(event) {
   
     const pricePerQuartB = oilBprice / oilBquart
     const costPerOilChangeB = pricePerQuartB * oilCapacity;
-    const costPerMileB = costPerOilChangeB / (oilAcon.checked ? 3000 : 5000)
+    const costPerMileB = costPerOilChangeB / (oilBcon.checked ? 3000 : 5000)
   
     console.log(`pricePerQuartB ${pricePerQuartB}`)
     console.log(`costPerOilChangeB ${costPerOilChangeB}`)
@@ -85,11 +85,11 @@ function oilSubmitHandler(event) {
     
     // display result in alert box
     if (costPerMileB < costPerMileA) {
-        alert('Oil B is cheaper');
+        alert(`Oil B is cheaper, at $${(costPerMileB * 1000).toFixed(2)} per 1,000 miles compared to Oil A at $${(costPerMileA * 1000).toFixed(2)} per 1,000 miles`);
     } else if (costPerMileB === costPerMileA) {
         alert('Both oil costs are the same');
     } else {
-        alert('Oil A is cheaper');
+        alert(`Oil A is cheaper at $${(costPerMileA * 1000).toFixed(2)} per 1,000 miles compared to Oil B at $${(costPerMileB * 1000).toFixed(2)} per 1,000 miles`);
     }
   } else {
       alert('Please enter appropriate values in each field!')

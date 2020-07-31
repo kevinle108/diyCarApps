@@ -106,19 +106,63 @@ button[type="reset"] {
 #oilA {
     margin: 10px;
     background-color: darkblue;
-    padding: 10px;
+    border-radius: 25px;
+    padding: 16px;
 }
 
 #oilB {
     margin: 10px;
-    background-color: darkblue;
-    padding: 10px;
+    background-color: darkslategrey;
+    border-radius: 25px;
+    padding: 16px;
 }
 
 .flexCenter {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+#oilCompSubmitButton {
+    padding: 15px 25px;
+    margin: 5px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: white;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px seagreen;
+}
+
+#oilCompResetButton {
+    padding: 15px 25px;
+    font-size: 24px;
+    margin: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: white;
+    background-color: orangered;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px darkred;
+}
+
+#oilTankCapacityWrap {
+    background-color: teal;
+    margin: 3%;
+    padding: 26px;
+    border-radius: 25px;
+}
+
+#oilCompBtnsWrap {
+    display: flex;
+    flex-direction: column;
 }
 
 @media (min-width: 769px) {
@@ -153,9 +197,13 @@ button[type="reset"] {
     /* end media queries for nav bar */
 
     /* start media queries for content */
-    #oilWrap {
+    #oilWrap, #oilCompBtnsWrap {
         flex-direction: row;
     }
+
+
     /* end media queries for nav bar */
+
+
 
 }
