@@ -1,5 +1,6 @@
-# Code Louisville Front-End Project
-View Site: https://kevinle108.github.io/
+# DIY Car Apps
+- Code Louisville Front-End Project
+- View Site: https://kevinle108.github.io/
 
 ## Description
 - For people who change their own oil, deciding which motor oil to buy is a headache since motor oil is often sold at different amounts (single qt, 5 qts, a 12pk of single qts, etc...) and varying prices. Also, the change interval for conventional oil is every 3,000 miles while synthetic oil is every 5,000 miles. This website helps simplifies all this by calculating the oil cost/mile to help determine which motor oil is more cost-effective. There also a fuel economy calculator and contact page. 
@@ -25,4 +26,7 @@ View Site: https://kevinle108.github.io/
 - Use “:nth child” CSS to style a series of elements
     - uses :first-child & :last-child selectors to hide certain elements of the hamburger menu in desktop view
 
+## Note:
+- Although this project meets all the requirements outlined in the Project Requirements document, the name of this repo is not ideal. Preferably it should be called '/diyCarApps' but GitHub hosting uses a repo name that is my username. 
+- Contact form submission doesn't actually go anywhere due to no back-end component on this site.  
 
