@@ -4,8 +4,10 @@
 - For people who change their own oil, deciding which motor oil to buy is a headache since motor oil is often sold at different amounts (single qt, 5 qts, a 12pk of single qts, etc...) and varying prices. Also, the change interval for conventional oil is every 3,000 miles while synthetic oil is every 5,000 miles. This website helps simplifies all this by calculating the oil cost/mile to help determine which motor oil is more cost-effective. There also a fuel economy calculator and contact page. 
 
 ## Main features
+- Form that tells compares 2 motor oils and determines which one is cheaper
+- Form that calculates MPG fuel economy
+- Contact form that checks for valid email and empty fields
 - Responsive hamburger-style navigation menu
-- HTML forms with JS functionality
 - CSS flexbox styling for responsive design
 
 ## Feature Requirements met
