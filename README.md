@@ -1,11 +1,14 @@
 # Code Louisville Front-End Project
+View Site: https://kevinle108.github.io/
 
 ## Description
-- For people who change their own oil, deciding which motor oil to buy is often a headache since motor oil is often sold at different amounts (a single qt, 5 qts, a 12pk of single qts, etc...) and varying prices. Also, the change interval for conventional oil is every 3,000 miles while synthetic oil is every 5,000 miles. This website helps simplifies all this by calculating the oil cost/mile to help determine which motor oil is more cost-effective. There also a fuel economy calculator.
+- For people who change their own oil, deciding which motor oil to buy is a headache since motor oil is often sold at different amounts (single qt, 5 qts, a 12pk of single qts, etc...) and varying prices. Also, the change interval for conventional oil is every 3,000 miles while synthetic oil is every 5,000 miles. This website helps simplifies all this by calculating the oil cost/mile to help determine which motor oil is more cost-effective. There also a fuel economy calculator and contact page. 
 
 ## Main features
+- Form that tells compares 2 motor oils and determines which one is cheaper
+- Form that calculates MPG fuel economy
+- Contact form that checks for valid email and empty fields
 - Responsive hamburger-style navigation menu
-- HTML forms with JS functionality
 - CSS flexbox styling for responsive design
 
 ## Feature Requirements met
@@ -20,6 +23,6 @@
 - Use JavaScript to perform math operations and display the result on your site.
     - calculates mpg or motor oil cost-effectiveness from form inputs
 - Use “:nth child” CSS to style a series of elements
-    - uses :first-child & :last-child selectors to display horizontal menu bar in desktop-view
+    - uses :first-child & :last-child selectors to hide certain elements of the hamburger menu in desktop view
 
 
